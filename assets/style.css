@@ -1,0 +1,72 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 0;
+
+  /* created background */
+}
+body{
+  background-color:antiquewhite ;
+}
+
+  /* added a flex box */
+.header{
+  direction:flex;
+  color: aliceblue;
+  flex-direction: row-reverse;
+  background-color: rgb(4, 4, 62);
+}
+
+a{
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  display: inline;
+  margin: left 0;
+  margin-right: auto;
+  color: aliceblue;
+}
+
+  /* created a box for the main*/
+.container{
+  display: flex;
+  height: 900px;
+  background-color: darkcyan;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  margin-left: 80px;
+  margin-right: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+/* container for the image */
+img{
+  display: flex;
+  margin-left: 50px;
+  width: 700px;
+  height: 700px;
+  border-width: 100px;
+
+
+}
+img{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  
+}
+
+
+
+
+
+footer{
+  display: flex;
+  height: 60px;
+  padding-top:  20px;
+  background-color: rgb(1, 1, 15);
+  color: aliceblue;
+  justify-content: center
+} 

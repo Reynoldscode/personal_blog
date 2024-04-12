@@ -3,15 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My Blog</title>
+  <link rel="stylesheet" href="./assets/style.css"> </link>
+  <link rel="stylesheet" href="./assets/form.css"> </link>
+  <link rel="stylesheet" href="./assets/blog.css"> </link>
 </head>
+
 <body>
-  
+  <header class="header">
+    <h1>ReyBlog</h1>
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
 
+    <label class="switch">
+      <input type="checkbox" id="switcher">
+      <span class ="slider round"></span>
+    </label>
+  </header>
 
+  <main class="container">
+    <div class="box">
+      <img src="./assets/reyimage.png" alt = "Avartar"/>
+    </div>
 
+    <form class="user-form">
+      <h2>Whats Your Story!</h2>
+      <p>
+        <label for="username">Name:</label>
+        <input class="text-input" id="username" type="text" placeholder="First Last" />
+      </p>
+      <p>
+        <label for="username">Title</label>
+        <input class="text-input" id="title" type="text" placeholder="Title" />
+      </p>
+      <p>
+        <label for="username">Story:</label>
+        <input class="text-input" id="userstory" type="text" placeholder="Your story here" />
+      </p>
+      <p>
+        <button>Submit</button>
+      </p>
+    </form>
+  </main>
 
+  <footer>
+    <p class="footer">
+      &copy; 2024 Reynolds Addy.
+     </p>
+  </footer>
 
-  <script src="./main.js"></script>
 </body>
 </html>
