@@ -12,15 +12,33 @@
 <body>
   <header class="header">
     <h1>ReyBlog</h1>
+
     <ul>
-      <li><a href="#Home">Home</a></li>
-      <li><a href="#blog">Blog</a></li>
+      <li><a href="#Home">Blog</a></li>
+      <li><a href="#blog">Home</a></li>
     </ul>
 
-    <label class="switch">
-      <input type="checkbox" id="switcher">
-      <span class ="slider round"></span>
-    </label>
+    <div class="toggle-switch">
+      <div class="row toggle">
+        <div class="col">
+          <p></p>
+        </div>
+  
+        <label class="switch col">
+          <input type="checkbox" id="theme-switcher">
+          <span class="slider round"></span>
+        </label>
+  
+        <div class="col">
+          <p>light/dark</p>
+        </div>
+      </div>
+  
+      <div class="row">
+        <h2></h2>
+      </div>
+      <div class="row">
+    </div>
   </header>
 
   <main class="container">
@@ -35,18 +53,17 @@
         <input class="text-input" id="username" type="text" placeholder="First Last" />
       </p>
       <p>
-        <label for="username">Title</label>
+        <label for="username">Title:</label>
         <input class="text-input" id="title" type="text" placeholder="Title" />
       </p>
-      <p>
-        <label for="username">Story:</label>
-        <input class="text-input" id="userstory" type="text" placeholder="Your story here" />
-      </p>
-      <p>
-        <button>Submit</button>
-      </p>
+      <div class="comment-section">
+        <label for="username"> Story:</label>
+        <textarea id="comment" name="comment" placeholder="Your story here"></textarea>
+      </div>
+      <button type="button">Submit</button>
     </form>
-  </main>
+
+  </main> 
 
   <footer>
     <p class="footer">

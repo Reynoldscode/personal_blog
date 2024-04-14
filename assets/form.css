@@ -1,8 +1,8 @@
 /* container for the form */
 .user-form{
   display: flex;
-  width: 500px;
-  height: 300px ;
+  width: 550px;
+  height: 400px ;
   margin-top: 60px;
   margin-right: 70px;
   justify-content: center;
@@ -34,7 +34,25 @@ input[type="text"]{
   align-items: center;
   margin-top: 20px;
   box-sizing: border-box;
+  
 }
+
+/* comment section */
+.comment-section{
+  display:flext;
+  flex-direction: column;
+  align-items: center;
+}
+/* twicking th ecomment section */
+label{
+  align-items: center;
+  flex-shrink: 0;}
+textarea{
+  flex-grow: 1;
+  margin-top: 1.5rem;
+  width: 300px;
+}
+
 button{
   color: aliceblue;
   margin-top: 20px;
