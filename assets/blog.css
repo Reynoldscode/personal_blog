@@ -28,6 +28,39 @@ ul{
 .toggle-switch{
   margin-left: auto;
 }
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  background-color: darkcyan;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 1rem;
+  border-radius: 30px;
+}
+div.user{
+  display: flex;
+  background-color: aliceblue;
+  height: 90px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+div.title{
+  display: flex;
+  background-color: aliceblue;
+  height: 90px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+textarea.story{
+  display: flex;
+  background-color: aliceblue;
+  height: 200px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
 
 .dark header{
   background-color:#243447;
