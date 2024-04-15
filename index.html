@@ -12,29 +12,24 @@
 <body>
   <header class="header">
     <h1>ReyBlog</h1>
-
     <ul>
-      <li><a href="#Home">Blog</a></li>
-      <li><a href="#blog">Home</a></li>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#blog">Blog</a></li>
     </ul>
-
     <div class="toggle-switch">
       <div class="row toggle">
         <div class="col">
           <p></p>
         </div>
-  
         <label class="switch col">
           <input type="checkbox" id="theme-switcher">
           <span class="slider round"></span>
         </label>
-  
         <div class="col">
           <p>light/dark</p>
         </div>
       </div>
-  
-      <div class="row">
+        <div class="row">
         <h2></h2>
       </div>
       <div class="row">
@@ -43,26 +38,18 @@
 
   <main class="container">
     <div class="box">
-      <img src="./assets/reyimage.png" alt = "Avartar"/>
+      <img src="./assets/story.jpg" alt = "Avartar"/>
     </div>
 
-    <form class="user-form">
-      <h2>Whats Your Story!</h2>
-      <p>
-        <label for="username">Name:</label>
-        <input class="text-input" id="username" type="text" placeholder="First Last" />
-      </p>
-      <p>
-        <label for="username">Title:</label>
-        <input class="text-input" id="title" type="text" placeholder="Title" />
-      </p>
-      <div class="comment-section">
-        <label for="username"> Story:</label>
-        <textarea id="comment" name="comment" placeholder="Your story here"></textarea>
-      </div>
-      <button type="button">Submit</button>
+    <form id="user-form">
+      <label>Username:</label>
+      <input type="text" id="reyName" placeholder="Username:" required>
+      <label>Title:</label>
+      <input type="title" id="reyTitle" placeholder="Title:" required>
+      <label>Story:</label>
+      <textarea type="comment" name="comment" id="reyComment" placeholder="Your Story here:" required></textarea>
+      <input type="submit" id="button" value="Submit">     
     </form>
-
   </main> 
 
   <footer>
@@ -70,6 +57,8 @@
       &copy; 2024 Reynolds Addy.
      </p>
   </footer>
-
+  <script src="./js/logic.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/blog.js"></script>
 </body>
 </html>

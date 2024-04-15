@@ -3,7 +3,6 @@
   margin: 0;
   margin-top: 0;
 
-  /* created background */
 }
 body{
   background-color:antiquewhite ;
@@ -26,34 +25,26 @@ ul{
   gap: 20px;
   list-style: none;
 }
-
 .toggle-switch{
   margin-left: auto;
 }
 
-.dark{
+.dark header{
   background-color:#243447;
-  height: 100vh;
+  /* height: 100vh; */
   color: #bebebe
 }
-.dark{
-  color: #bebebe;
+.dark main{
+  background-color:#243447;
+  /* height: 100vh; */
+  color: #bebebe
 }
-.dark:hover {
-  background-color: #111;
+.dark footer{
+  background-color:#243447;
+  /* height: 100vh; */
+  color:white
 }
-/* Light Mode */
-.light {
-  background-color: #f0ead6;
-  color: black;
-  height: 100vh;
-}
-.light{
-  color: black;
-}
-.light:hover {
-  background-color: rgb(29, 128, 210);
-}
+
 /* Styling the Switch button */
 .switch {
   position: relative;
@@ -125,7 +116,6 @@ span{
   border-radius: 50%;
   padding: 10px;
 }
-
 
 a{
   flex-direction: row-reverse;

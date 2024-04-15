@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 0;
+
+}
+body{
+  background-color:antiquewhite ;
+}
+
+.header{
+  display: flex;
+  color: aliceblue;
+  height: 150px;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgb(4, 4, 62);
+}
+h1{
+  display: flex;
+  margin-left:auto;
+}
+ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.toggle-switch{
+  margin-left: auto;
+}
+
+.dark header{
+  background-color:#243447;
+  /* height: 100vh; */
+  color: #bebebe
+}
+.dark main{
+  background-color:#243447;
+  /* height: 100vh; */
+  color: #bebebe
+}
+.dark footer{
+  background-color:#243447;
+  /* height: 100vh; */
+  color:white
+}
+
+/* Styling the Switch button */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(29, 128, 210);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(29, 128, 210);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.row {
+  margin: 20px;
+  display: flex;
+}
+
+span{
+  border-radius: 50%;
+  padding: 10px;
+}
+
+a{
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  display: inline;
+  margin: left 0;
+  margin-right: auto;
+  color: aliceblue;
+}
+
+
+/* footer details */
+footer{
+  display: flex;
+  font-size: 20px;
+  height: 60px;
+  padding-top:  20px;
+  background-color: rgb(3, 3, 56);
+  color: aliceblue;
+  justify-content: center}
