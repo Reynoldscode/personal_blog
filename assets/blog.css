@@ -7,7 +7,12 @@
 body{
   background-color:antiquewhite ;
 }
-
+label{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .header{
   display: flex;
   color: aliceblue;
@@ -45,7 +50,7 @@ div.user{
   background-color: aliceblue;
   height: 90px;
   border-radius: 5px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 div.title{
   display: flex;
