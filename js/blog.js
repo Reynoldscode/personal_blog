@@ -1,9 +1,10 @@
-const submitButton = document.getElementById("submitButton");
-submitButton.addEventListener("click", () => {
-  
-// Get the user data from local storage
 const userData = JSON.parse(localStorage.getItem("userData"));
 
-// Navigate to the next HTML page
-window.location.href = "nextPage.html";
-});
+document.querySelector('.user').textContent = userData.name;
+document.querySelector('.title').textContent = userData.title;
+document.querySelector('.story').textContent = userData.comment;
+
+
+document.getElementById("backblog").addEventListener("click", function() {
+  window.location.href = "./index.html";
+  });
