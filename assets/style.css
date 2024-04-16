@@ -174,3 +174,19 @@ footer{
   background-color: rgb(3, 3, 56);
   color: aliceblue;
   justify-content: center}
+
+  @media screen and (max-width:992px){
+    header{background-color: rgb(2, 44, 2);
+      h3 h1 h4{
+        color: rgb(39, 6, 69);
+      }}
+    
+  }@media screen and (min-width:768px){
+    body{min-width: 100px}
+    body h3 h1 h4{color: gold;}
+  }
+  @media screen and (min-width:768px) {
+    .aside{min-width: wrap;}
+    footer{min-width: 100px; background-color: rgb(2, 44, 2); color: #f7f1f1;}
+    
+  }
